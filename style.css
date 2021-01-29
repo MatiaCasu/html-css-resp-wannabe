@@ -82,23 +82,16 @@ img {
 /* /Debug */
 
 @media screen and (max-width: 420px){
-  /* /RESET */
-  /* *{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-size: 10px;
-    text-align: center;
-  } */
-  /* RESET */
 
-  h1{
-    font-size: 50px;
-    margin-bottom: 100px;
+  .row{
+    width: 400px;
+    margin: 0 auto;
+  }
+  img{
+    height: 50px;
   }
 
-  #lezioni img{
-    background-color: orange;
-  }
+
+
 
 }
