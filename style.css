@@ -147,6 +147,7 @@ img {
     float: left;
     min-width: 100%;
     background-color: lightblue;
+    padding-bottom: 20px;
   }
 
   #steps .row>.left,
@@ -184,10 +185,11 @@ img {
 
   hr{
     width: 90%;
+    margin: 0 auto;
     margin-top: 20px;
     border: 1px solid lightgrey;;
   }
   /* /SEZIONE 3 Id WHY*/
-  /* /STILE LAYOUT */
 
+  /* /STILE LAYOUT */
 }
