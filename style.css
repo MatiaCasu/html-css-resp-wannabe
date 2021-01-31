@@ -86,36 +86,43 @@ img {
   body{
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
+    scroll-behavior: smooth;
   }
 
   .container {
     width: 90%;
     margin: auto;
-    padding: 25px 0;
+  }
+
+  body .container:first-of-type{
+    padding-top: 20px;
   }
 
   .row{
     width: 100%;
     margin: 0;
+    margin-bottom: 50px;
   }
   /* Font */
   h1{
     font-size: 30px;
-    margin: 20px 0;;
-    background-color:
+    padding: 10px 0;
+    margin-bottom: 20px;
+    border: 3px solid lightblue;
   }
 
   h3{
-    font-size: 20px;
-    margin: 15px 0;
+    font-size: 22px;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    background-color: lightblue;
   }
 
 /* img misure prova */
   img{
-    height: 20px;
-    width: auto;
-    margin: 0;
+    height: 150px;
+    max-width: 100%;
+    margin-bottom: 15px;
   }
   /* /ELEMENTI PIù GRANDI DEL BODY ADATTATI e RESET */
 
@@ -123,50 +130,64 @@ img {
   /* SEZIONE 1 Id LEZIONI */
   #lezioni .left, #lezioni .right{
     width: 50%;
-    padding: 20px 10px;
+    padding: 0 10px;
     float: left;
   }
 
   #lezioni img{
     height: 100px;
     max-width: 100%;
-    background-color: lightblue;
-    padding:5%;
-    border-radius: 20%;
   }
   /* /SEZIONE 1 Id LEZIONI */
 
   /* SEZIONE 2 Id STEPS */
-  #steps img{
-    height: 150px;
-    max-width: 100%;
-  }
-
   #steps .row>.left,
   #steps .row>.central,
   #steps .row>.right {
     float: left;
     min-width: 100%;
-    margin: 25px 0;
+    background-color: lightblue;
   }
 
+  #steps .row>.left,
+  #steps .row>.central{
+    margin-bottom:40px;
+  }
 
-
-
-
-}
+  #steps img{
+    height: 165px ;
+    max-width: 100%;
+    margin-top: 20px;
+    border: 2px white solid;
+    padding: 15px;
+  }
   /* /SEZIONE 2 Id STEPS */
 
+  /* SEZIONE 3 Id WHY*/
+  #why .row>.second,
+  #why .row>.first,
+  #why .row>.third{
+    margin: 0;
+  }
 
+  #why .row>.first,
+  #why .row>.second{
+    margin-bottom: 30px;
+  }
 
+  #why .row img {
+    background-color: lightblue;
+    border-radius: 0%;
+    border: 2px white;
+    border-style: solid;
+  }
 
-
-
-
-
+  hr{
+    width: 90%;
+    margin-top: 20px;
+    border: 1px solid lightgrey;;
+  }
+  /* /SEZIONE 3 Id WHY*/
   /* /STILE LAYOUT */
-
-
-
 
 }
