@@ -99,6 +99,7 @@ img {
     margin: 0;
     margin-bottom: 50px;
   }
+
   /* Font */
   h1{
     font-size: 30px;
@@ -109,15 +110,12 @@ img {
 
   h3{
     font-size: 22px;
-    padding: 5px 0;
+    padding: 10px 0;
     margin-bottom: 15px;
     background-color: #c3cfd9;
   }
 
-/* img misure prova */
   img{
-    height: 150px;
-    max-width: 100%;
     margin-bottom: 15px;
   }
   /* /ELEMENTI PIù GRANDI DEL BODY ADATTATI e RESET */
@@ -131,8 +129,7 @@ img {
 
   #lezioni .left, #lezioni .right{
     width: 50%;
-    padding: 0 10px;
-    padding-bottom: 20px;
+    padding: 20px;
     float: left;
   }
 
@@ -149,7 +146,16 @@ img {
     float: left;
     min-width: 100%;
     background-color: #c3cfd9;
-    padding-bottom: 20px;
+    padding: 20px;
+    text-align: left;
+  }
+
+  #steps .row>.left::after,
+  #steps .row>.central::after,
+  #steps .row>.right::after {
+    display: block;
+    content: "";
+    clear: both;
   }
 
   #steps .row>.left,
@@ -159,10 +165,20 @@ img {
 
   #steps img{
     height: 165px ;
-    max-width: 100%;
-    margin-top: 20px;
-    border: 2px white solid;
+    max-width: 50%;
+    border: 3px solid #f9f9f9;
     padding: 15px;
+  }
+
+  #steps .row>.left img,
+  #steps .row>.right img{
+    float: left;
+    margin-right: 15px;
+  }
+
+  #steps .row>.central img{
+    float: right;
+    margin-left: 15px;
   }
   /* /SEZIONE 2 Id STEPS */
 
@@ -171,21 +187,23 @@ img {
   #why .row>.first,
   #why .row>.third{
     margin: 0;
+    padding: 0 20px;
+  }
+
+  #why .row>.third{
+    padding-bottom: 20px;
   }
 
   #why .row img {
     background-color: #c3cfd9;
     border-radius: 0%;
-    border: 2px white;
-    border-style: solid;
   }
 
   hr{
     width: 90%;
     margin: 20px auto;
-    border: 1px solid lightgrey;
+    border: 1px solid #c3cfd9;
   }
   /* /SEZIONE 3 Id WHY*/
-
   /* /STILE LAYOUT */
 }
